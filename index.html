@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Використання операторів циклу</title>
+	</head>	
+	<body>
+		<script> 
+			"use strict";
+			
+			// Введення числа користувачем
+			let n = parseInt(prompt("Введіть число n для обчислення суми від 1 до n"));
+
+			// Використання оператора циклу FOR
+			document.write("<p>Використання оператора циклу <b>FOR</b></p>");
+			let sumFor = 0;
+			for (let i = 1; i <= n; i++) {
+				sumFor += i;
+			}
+			document.write("Сума чисел від 1 до ", n, " за допомогою циклу FOR: ", sumFor, "<br>");
+
+			// Використання оператора циклу WHILE
+			document.write("<p>Використання оператора циклу <b>WHILE</b></p>");
+			let sumWhile = 0;
+			let i = 1;
+			while (i <= n) {
+				sumWhile += i;
+				i++;
+			}
+			document.write("Сума чисел від 1 до ", n, " за допомогою циклу WHILE: ", sumWhile, "<br>");
+
+			// Використання оператора циклу DO WHILE
+			document.write("<p>Використання оператора циклу <b>DO WHILE</b></p>");
+			let sumDoWhile = 0;
+			i = 1;
+			do {
+				sumDoWhile += i;
+				i++;
+			} while (i <= n);
+			document.write("Сума чисел від 1 до ", n, " за допомогою циклу DO WHILE: ", sumDoWhile, "<br>");
+
+		</script>
+	</body>
+</html>
